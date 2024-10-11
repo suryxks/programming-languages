@@ -33,6 +33,7 @@ fun nondecreasing xs =
        []=>true
      | _::[] => true 
      | head::(neck::rest)=> head<=neck andalso nondecreasing(neck::rest)
+     
 
 datatype sgn = P|N|Z 
 
